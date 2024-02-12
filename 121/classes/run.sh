@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-clang++ classes.cpp --std=c++17
+clang++ $1 --std=c++17
 ./a.out
 rm a.out
