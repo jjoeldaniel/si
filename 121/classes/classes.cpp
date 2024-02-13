@@ -104,6 +104,9 @@ private:
   std::vector<GroceryItem> cart;
 };
 
+// Do not edit this function
+void log(std::string s) { std::cout << "[LOG] " << s << std::endl; }
+
 int main() {
   ShoppingCart cart;
 
@@ -115,21 +118,25 @@ int main() {
 
   cart.displayCart();
 
+  log("Testing adjustPrice()");
   GroceryItem lastItem = cart.pop();
   lastItem.printItem();
   float oldPrice = lastItem.price;
   lastItem.adjustPrice(1.0);
   assert(oldPrice + 1.0 == lastItem.price);
 
+  log("Testing addQuantity()");
   size_t oldQuantity = lastItem.quantity;
   lastItem.addQuantity(10);
   assert(oldQuantity + 10 == lastItem.quantity);
 
+  log("Testing changePrice()");
   lastItem.changePrice(oldPrice);
   assert(oldPrice == lastItem.price);
 
   cart.displayCart();
 
+  log("Testing GroceryCart comparison operators");
   assert(GroceryItem("strawberry", 1.0) == GroceryItem("strawberry", 1.0));
   assert(GroceryItem("strawberryy", 1.0) != GroceryItem("strawberry", 1.0));
   assert(GroceryItem("strawberry", 2.0) != GroceryItem("strawberry", 1.0));
