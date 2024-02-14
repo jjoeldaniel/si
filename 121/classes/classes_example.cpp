@@ -64,7 +64,7 @@ public:
     size_t index = hasItem(item);
 
     if (index != -1) {
-      this->cart[index].addQuantity(1);
+      this->cart[index].addQuantity(item.quantity);
     } else
       this->cart.push_back(item);
   }
