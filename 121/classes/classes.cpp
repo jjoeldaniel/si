@@ -11,25 +11,28 @@ public:
 
   GroceryItem(std::string name, float price, int quantity = 1) {
     // Hint: Initialize all our member variables here
+    this->name = name;
+    this->price = price;
+    this->quantity = quantity;
   }
 
   /**
    *  Add `n` number of items to quantity
    *
    */
-  void addQuantity(size_t n) {}
+  void addQuantity(size_t n) { this->quantity += n; }
 
   /**
    * Change item price to new price `n`
    *
    */
-  void changePrice(float n) {}
+  void changePrice(float n) { this->price = n; }
 
   /**
    *  Adjust price by `n`
    *
    */
-  void adjustPrice(float n) {}
+  void adjustPrice(float n) { this->price += n; }
 
   /**
    *  Prints an items info
