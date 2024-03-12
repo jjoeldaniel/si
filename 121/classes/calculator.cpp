@@ -21,7 +21,7 @@ private:
 };
 
 int main() {
-  Calculator calc = Calculator(5);
+  Calculator calc{5};
   calc.print();
   calc.add(3);
   calc.print();
