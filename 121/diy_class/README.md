@@ -18,12 +18,12 @@ This repository contains a simple C++ testing suite for the `Book` class. The `B
 
 3. Run the testing suite script:
 
-> Note: You will only have to run `chmod +x run.sh` once!
+   > Note: You will only have to run `chmod +x run.sh` once!
 
-```bash
-chmod +x run.sh
-./run.sh
-```
+   ```bash
+   chmod +x run.sh
+   ./run.sh
+   ```
 
 This script will compile the `Book.cpp` file along with the test file `main.cpp` using either `clang++` or `g++` (depending on availability). If compilation is successful, it will run the testing suite to verify the functionality of the `Book` class.
 
