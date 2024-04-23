@@ -11,28 +11,25 @@ public:
 
   GroceryItem(std::string name, float price, int quantity = 1) {
     // Hint: Initialize all our member variables here
-    this->name = name;
-    this->price = price;
-    this->quantity = quantity;
   }
 
   /**
    *  Add `n` number of items to quantity
    *
    */
-  void addQuantity(size_t n) { this->quantity += n; }
+  void addQuantity(size_t n) {}
 
   /**
    * Change item price to new price `n`
    *
    */
-  void changePrice(float n) { this->price = n; }
+  void changePrice(float n) {}
 
   /**
    *  Adjust price by `n`
    *
    */
-  void adjustPrice(float n) { this->price += n; }
+  void adjustPrice(float n) {}
 
   /**
    *  Prints an items info
@@ -64,7 +61,7 @@ public:
    * Returns the index of the found item or -1 if not found
    *
    */
-  int hasItem(GroceryItem item) { return -1; }
+  int hasItem(GroceryItem item) {}
 
   /**
    * Pops the first instance of a GroceryItem `item`
