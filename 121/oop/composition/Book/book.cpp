@@ -2,11 +2,10 @@
 #include <iostream>
 #include <string>
 
-Book::Book(std::string name, std::string author)
-    : _name(name), _author(author){};
+Book::Book(std::string name, std::string author) {}
 
-std::string Book::getName() { return this->_name; }
-std::string Book::getAuthor() { return this->_author; }
-void Book::print() {
-  std::cout << "Book: " << this->_name << " by " << this->_author << std::endl;
-}
+std::string Book::getName() {}
+std::string Book::getAuthor() {}
+
+// Expected Output: "Book: <name> by <author>"
+void Book::print() {}
