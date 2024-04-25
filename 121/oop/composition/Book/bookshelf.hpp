@@ -3,7 +3,6 @@
 
 class Bookshelf {
 public:
-  Bookshelf();
   void addBook(Book book);
   void print();
 
