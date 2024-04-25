@@ -106,6 +106,7 @@ int main() {
 
   std::cout << "Total score: " << totalPoints << "/" << maxPoints << std::endl;
 
+  std::cout << "\nTested Inputs:\n";
   q1.print();
   q2.print();
   q3.print();
