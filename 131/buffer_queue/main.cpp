@@ -12,6 +12,14 @@ public:
      * this string into chunks of 4 characters and append
      * each chunk to our std::vector `vec`.
      */
+
+    std::string chunk{""};
+    for (char &c : str) {
+      if (chunk.size() == 4) {
+        this->vec.push_back(chunk);
+        chunk = "";
+      }
+    }
   }
   std::string front() {
     /*

@@ -12,17 +12,17 @@ public:
      * this string into chunks of 4 characters and append
      * each chunk to our std::vector `vec`.
      */
-    std::string word{""};
+    std::string chunk{""};
 
     for (size_t i = 0; i < str.size(); i++) {
-      if (word.size() == 4) {
-        this->vec.push_back(word);
-        word = "";
+      if (chunk.size() == 4) {
+        this->vec.push_back(chunk);
+        chunk = "";
       }
-      word.push_back(str[i]);
+      chunk.push_back(str[i]);
     }
-    if (!word.empty())
-      this->vec.push_back(word);
+    if (!chunk.empty())
+      this->vec.push_back(chunk);
   }
   std::string front() {
     /*
