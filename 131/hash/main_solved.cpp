@@ -38,13 +38,13 @@ public:
   void update(K key, V value) {
     if (!contains(key)) {
       throw std::logic_error("This key doesn't exist, silly!");
-    } else {
-      size_t index = hash(key);
-      std::vector<std::pair<K, V>> &destination = this->internal_array[index];
-      for (auto &x : destination) {
-        if (x.first == key)
-          x.second = value;
-      }
+    }
+
+    size_t index = hash(key);
+    std::vector<std::pair<K, V>> &destination = this->internal_array[index];
+    for (auto &x : destination) {
+      if (x.first == key)
+        x.second = value;
     }
   };
 
