@@ -5,11 +5,11 @@
  */
 class Book {
 private:
-  std::string title;  /**< The title of the book */
-  std::string author; /**< The author of the book */
-  int year;           /**< The year of publication */
-  std::string ISBN;   /**< The ISBN of the book */
-
+  std::string title_;  /**< The title of the book */
+  std::string author_; /**< The author of the book */
+  int year_;           /**< The year of publication */
+  std::string ISBN_;   /**< The ISBN of the book */
+  
 public:
   /**
    * @brief Default constructor for the Book class.

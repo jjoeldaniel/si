@@ -7,7 +7,6 @@ public:
     srand(time(0));                      // seed random number generator
     int secretNumber = rand() % end + 1; // generates a number between 1 and 100
     std::cout << "A secret number has been generated!" << std::endl;
-    ;
 
     /* Assign to `num` and print a message */
     /* stating the resource is acquired */

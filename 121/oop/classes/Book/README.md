@@ -7,14 +7,10 @@ This repository contains a simple C++ testing suite for the `Book` class. The `B
 1. Download the project files:
 
    ```bash
-   (mkdir diy_class && cd diy_class && curl https://raw.githubusercontent.com/jjoeldaniel/si/main/121/diy_class/install.sh | bash)
+   mkdir Book && cd Book && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/121/oop/classes/Book/{Book.cpp,Book.h,main.cpp,run.sh} 
    ```
 
-2. Navigate to the new directory:
-
-   ```bash
-   cd diy_class
-   ```
+2. Complete the `Book` class:
 
 3. Run the testing suite script:
 

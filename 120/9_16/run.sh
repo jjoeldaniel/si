@@ -8,13 +8,13 @@ else
 fi
 
 # Compile the source files
-$COMPILER -std=c++17 Book.cpp main.cpp -o book
+$COMPILER -std=c++17 main.cpp -o main
 
 # Check if compilation was successful
 if [ $? == 0 ]; then
 	echo "Compilation successful. Running test..."
 	# Run the executable
-	./book
+	./main
 else
 	echo "Compilation failed."
 fi
