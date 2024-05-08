@@ -2,7 +2,7 @@ nums = [0, 1]
 n = 10
 
 
-def fib(l: list[int], n: int):
+def fib(l: list[int], n: int) -> list[int] | None:
     # base case
     if len(l) >= n:
         return l
