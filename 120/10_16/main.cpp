@@ -26,8 +26,19 @@ void right_to_left(const int &left, const int &right) {}
 //
 // EXTRA: Try to print this out on the same line, comma separated
 //
+// ex: nums = [1, 2, 3, 4]
+//
 // output: 1, 2, 3, 4
 void print_vector(const std::vector<int> &nums) {}
+
+// TODO: Use ANY loop to print `nums` reversed
+//
+// EXTRA: Try to print this out on the same line, comma separated
+//
+// ex: nums = [1, 2, 3, 4]
+//
+// output: 4, 3, 2, 1
+void print_vector_reversed(const std::vector<int> &nums) {}
 
 // TODO: Use a loop (any!) to print a string in reverse
 //
@@ -52,6 +63,8 @@ int main() {
   std::cout << "Running print_vector(nums)\n\n";
   std::vector nums{1, 2, 3, 4, 5};
   print_vector(nums);
+  std::cout << "Running print_vector_reversed(nums)\n\n";
+  print_vector_reversed(nums);
 
   std::vector strs{"racecar", "house", "apple"};
   for (const auto &str : strs) {
