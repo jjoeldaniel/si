@@ -6,7 +6,7 @@ This repository contains a simple C++ testing suite for working with **`for` loo
 1. Download the project files:
 
    ```bash
-   mkdir for_loops3 && cd for_loops3 && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/120/10_14/{main.cpp,run.sh} 
+   mkdir for_loops3 && cd for_loops3 && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/120/10_16/{main.cpp,run.sh} 
    ```
 
 2. Complete the TODOs:
