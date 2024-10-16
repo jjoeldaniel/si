@@ -52,8 +52,10 @@ void reverse_print(const std::string &str) {}
 
 // DO NOT MODIFY `main()`
 int main() {
-  int left = 13;
-  int right = 18;
+  const int left = 13;
+  const int right = 18;
+  const std::vector nums{1, 2, 3, 4, 5};
+  const std::vector strs{"racecar", "house", "apple"};
 
   printf("\nRunning left_to_right(%d, %d)\n\n", left, right);
   left_to_right(left, right);
@@ -61,12 +63,11 @@ int main() {
   right_to_left(left, right);
 
   std::cout << "Running print_vector(nums)\n\n";
-  std::vector nums{1, 2, 3, 4, 5};
   print_vector(nums);
+
   std::cout << "Running print_vector_reversed(nums)\n\n";
   print_vector_reversed(nums);
 
-  std::vector strs{"racecar", "house", "apple"};
   for (const auto &str : strs) {
     printf("Running reverse_print(%s)\n\n", str);
     reverse_print(str);
