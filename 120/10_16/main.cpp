@@ -10,7 +10,15 @@
 // ex: left = 6, right = 10
 //
 // output: 6, 7, 8, 9, 10
-void left_to_right(const int &left, const int &right) {}
+void left_to_right(const int &left, const int &right) {
+  for (int i = left; i <= right; i++) {
+    if (i == right) {
+      std::cout << i << std::endl;
+    } else {
+      std::cout << i << ", ";
+    }
+  }
+}
 
 // TODO: Use a `for` loop to print each number
 // from right to left where left is the smaller number
@@ -20,7 +28,15 @@ void left_to_right(const int &left, const int &right) {}
 // ex: left = 6, right = 10
 //
 // output: 10, 9, 8, 7, 6
-void right_to_left(const int &left, const int &right) {}
+void right_to_left(const int &left, const int &right) {
+  for (int i = right; i >= left; i--) {
+    if (i == left) {
+      std::cout << i << std::endl;
+    } else {
+      std::cout << i << ", ";
+    }
+  }
+}
 
 // TODO: Use a `for-each` loop to print each number
 //
@@ -29,7 +45,14 @@ void right_to_left(const int &left, const int &right) {}
 // ex: nums = [1, 2, 3, 4]
 //
 // output: 1, 2, 3, 4
-void print_vector(const std::vector<int> &nums) {}
+void print_vector(const std::vector<int> &nums) {
+  // for (type name : container)
+
+  for (int x : nums) {
+    std::cout << x << ", ";
+  }
+  std::cout << std::endl;
+}
 
 // TODO: Use ANY loop to print `nums` reversed
 //
