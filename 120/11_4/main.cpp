@@ -15,9 +15,19 @@ void printBoard(std::vector<std::vector<char>> &board) {
   //
   // ex:
   //
-  // [X O _]
-  // [X _ O]
-  // [X _ O]
+  // [X O X ]
+  // [X _ O ]
+  // [X _ O ]
+  //
+  for (std::vector<char> row : board) {
+    for (char column : row) {
+    }
+  }
+  for (int i = 0; i < board.size(); i++) {
+    for (int j = 0; j < board.at(i).size(); j++) {
+
+    }
+  }
   
 }
 
