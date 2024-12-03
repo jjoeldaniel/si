@@ -17,7 +17,7 @@ public:
     // Getter functions
     std::string getTitle() const {
         // TODO: Return the title of the book
-        return "";
+        return title_;
     }
 
     std::string getAuthor() const {
@@ -36,9 +36,9 @@ public:
     }
 
 private:
-    std::string title;
-    std::string author;
-    int year;
+    std::string title_;
+    std::string author_;
+    int year_;
 };
 
 int main() {
@@ -57,7 +57,7 @@ int main() {
   // Author: "Lois Lawry"
   // Year: 1993
 
-  Book book1;
+  Book book1{"the giver", "louis lawry", 1993};
   Book book2;
   Book book3;
 
