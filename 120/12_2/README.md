@@ -6,7 +6,7 @@ This repository contains a simple C++ testing suite for working with **File I/O*
 1. Download the project files:
 
    ```bash
-   mkdir fileIO && cd fileIO && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/120/12_2/{main.cpp,run.sh,README.md} 
+   mkdir fileIO && cd fileIO && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/120/12_2/{main.cpp,run.sh,README.md,numbers.txt} 
    ```
 
 2. Complete the TODOs:
