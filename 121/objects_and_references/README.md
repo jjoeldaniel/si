@@ -1,12 +1,12 @@
-# Classes Pt. 2 
+# Objects and References 
 
-This repository contains a simple C++ testing suite for working with **classes**.
+This repository contains a simple C++ testing suite for working with **objects** and **references**.
 ## Instructions
 
 1. Download the project files:
 
    ```bash
-   mkdir classes_exercise && cd classes_exercise && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/121/classes/{main.cc,Pet.cc,Pet.h,run.sh} 
+   mkdir objects_and_references && cd objects_and_references && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/121/objects_and_references/{main.cc,character.cc,character.h,run.sh} 
    ```
 
 2. Complete the TODOs:
