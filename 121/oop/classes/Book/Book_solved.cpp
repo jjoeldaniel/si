@@ -3,42 +3,42 @@
 
 // Default constructor
 Book::Book()
-    : title("Book Title"), author("Book Author"), year(1970),
-      ISBN("123456789") {}
+    : title_("Book Title"), author_("Book Author"), year_(1970),
+      ISBN_("123456789") {}
 
 // Parameterized constructor
 Book::Book(const std::string &title, const std::string &author, int year,
            const std::string &ISBN)
-    : title(title), author(author), year(year), ISBN(ISBN) {}
+    : title_(title), author_(author), year_(year), ISBN_(ISBN) {}
 
 // Copy constructor
 Book::Book(const Book &other)
-    : title(other.title), author(other.author), year(other.year),
-      ISBN(other.ISBN) {}
+    : title_(other.getTitle()), author_(other.getAuthor()), year_(other.getYear()),
+      ISBN_(other.getISBN()) {}
 
 // Getter methods
-std::string Book::getTitle() const { return title; }
+std::string Book::getTitle() const { return title_; }
 
-std::string Book::getAuthor() const { return author; }
+std::string Book::getAuthor() const { return author_; }
 
-int Book::getYear() const { return year; }
+int Book::getYear() const { return year_; }
 
-std::string Book::getISBN() const { return ISBN; }
+std::string Book::getISBN() const { return ISBN_; }
 
 // Setter methods
-void Book::setTitle(const std::string &title) { this->title = title; }
+void Book::setTitle(const std::string &title) { this->title_ = title; }
 
-void Book::setAuthor(const std::string &author) { this->author = author; }
+void Book::setAuthor(const std::string &author) { this->author_ = author; }
 
-void Book::setYear(int year) { this->year = year; }
+void Book::setYear(int year) { this->year_ = year; }
 
-void Book::setISBN(const std::string &ISBN) { this->ISBN = ISBN; }
+void Book::setISBN(const std::string &ISBN) { this->ISBN_ = ISBN; }
 
 // Method to display book information
 void Book::displayBook() const {
-  std::cout << "Title: " << title << std::endl;
-  std::cout << "Author: " << author << std::endl;
-  std::cout << "Year: " << year << std::endl;
-  std::cout << "ISBN: " << ISBN << std::endl;
+  std::cout << "Title: " << title_ << std::endl;
+  std::cout << "Author: " << author_ << std::endl;
+  std::cout << "Year: " << year_ << std::endl;
+  std::cout << "ISBN: " << ISBN_ << std::endl;
   std::cout << std::endl;
 }
