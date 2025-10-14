@@ -1,4 +1,4 @@
-#include "car.hpp" // Include the header file to get the class definition
+#include "Car.hpp" // Include the header file to get the class definition
 #include <utility>   // For std::move
 
 // TODO: PROBLEM 1 - Implement the Constructor
@@ -8,9 +8,8 @@
 // - The `engine_` member is an object and must be constructed. Its constructor
 //   needs the `engineHp` value.
 Car::Car(std::string make, std::string model, int engineHp) 
-    : make_(std::move(make)), model_(std::move(model)), engine_(engineHp) {
-    // The body of the constructor can be empty because the
-    // member initializer list handles all the work.
+    /* member initializer list goes here */ {
+    // The body of the constructor can be empty.
 }
 
 // TODO: PROBLEM 2 - Delegate Actions to the Engine
@@ -18,7 +17,7 @@ Car::Car(std::string make, std::string model, int engineHp)
 // `engine_` member object to make this happen. This is called "delegation".
 void Car::startCar() {
     std::cout << "Trying to start the " << make_ << " " << model_ << "..." << std::endl;
-    engine_.start(); // Delegate the "start" action to the engine component.
+    // implementation goes here
 }
 
 // TODO: PROBLEM 3 - Delegate Actions to the Engine
@@ -26,7 +25,7 @@ void Car::startCar() {
 // member object.
 void Car::stopCar() {
     std::cout << "Trying to stop the " << make_ << " " << model_ << "..." << std::endl;
-    engine_.stop(); // Delegate the "stop" action.
+    // implementation goes here
 }
 
 // TODO: PROBLEM 4 - Use the Component's State
@@ -35,11 +34,7 @@ void Car::stopCar() {
 // 2. Use an if-else statement to print the correct message based on whether
 //    the engine is on or off.
 void Car::drive() {
-    if (engine_.getIsRunning()) {
-        std::cout << "Driving the " << make_ << " " << model_ << "." << std::endl;
-    } else {
-        std::cout << "The car can't drive. The engine is off." << std::endl;
-    }
+    // implementation goes here
 }
 
 // This method is provided for you. It uses the car's members and also
