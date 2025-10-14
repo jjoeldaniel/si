@@ -32,4 +32,10 @@ private:
   T2 second;
 };
 
+template <typename T1, typename T2>
+std::ostream& operator<<(std::ostream& os, const Pair<T1, T2>& p) {
+    os << "(" << p.getFirst() << ", " << p.getSecond() << ")";
+    return os;
+}
+
 #endif // PAIR_HPP

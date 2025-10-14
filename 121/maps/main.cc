@@ -88,6 +88,7 @@ int main() {
         {"Taylor", 20},
         {"Kevin", -5}
     };
+
     std::map<std::string, int> finalScores = tallyPlayerScores(events);
     std::cout << "Tallying scores from game events..." << std::endl;
     printScores(finalScores);
