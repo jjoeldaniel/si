@@ -6,7 +6,7 @@ This repository contains a simple C++ testing suite for working with **smart poi
 1. Download the project files:
 
    ```bash
-   mkdir objects_and_references && cd objects_and_references && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/121/pointers_and_iterators/{main.cpp,run.sh} 
+   mkdir pointers_and_iterators && cd pointers_and_iterators && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/121/pointers_and_iterators/{main.cpp,run.sh} 
    ```
 
 2. Complete the TODOs:
