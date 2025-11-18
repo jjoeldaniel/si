@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SOURCE_FILES="main_solved.cpp"
+SOURCE_FILES="main.cpp"
 EXECUTABLE_NAME="main"
 CPP_STANDARD="c++17"
 
