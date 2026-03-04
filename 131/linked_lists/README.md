@@ -6,7 +6,7 @@ This repository contains a simple C++ testing suite for working with **linked li
 1. Download the project files:
 
    ```bash
-   mkdir classes_exercise && cd classes_exercise && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/131/linked_lists/{main.cpp,run.sh} 
+   mkdir linked_lists && cd linked_lists && curl --remote-name-all https://raw.githubusercontent.com/jjoeldaniel/si/main/131/linked_lists/{main.cpp,run.sh} 
    ```
 
 2. Complete the TODOs:
